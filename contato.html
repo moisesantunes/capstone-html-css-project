@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos BÓLIDOS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-    <nav>
-        <a href="/index.html">Inicio</a>
-        <a href="/contato.html">Contato</a>
-        <a href="/portifolio.html">Portifolio</a>
-        <a href="/galeria.html">Galeria</a>
-    </nav>
-<form action="/contato" method="post">
-    <fieldset>
-        <legend>Fala comigo</legend>
-        <label for="nome_do_cliente">
-            Nome do Cliente:
-            <input type="text" name="nome_do_cliente" id="nome_do_cliente">
-        </label><br>
-        <label for="modelo_do_carro">
-            Modelo do carro:
-            <input type="text" name="modelo_do_carro" id="modelo_do_carro">
-        </label><br>
-        <p>Como voce usa o Possante:</p>
-        <label for="dia_a_dia">
-            <input type="checkbox" name="tipo_de_uso" id="dia_a_dia">
-            Dia a Dia
-        </label>
-        <label for="lazer">
-            <input type="checkbox" name="tipo_de_uso" id="lazer">
-            Passeio
-        </label>
-        <label for="eventos">
-            <input type="checkbox" name="tipo_de_uso" id="eventos">
-            Eventos
-        </label>
-        <div>
-            <label for="descicao_servico">Conte para mim como podemos ajudar: <br>
-            <textarea name="descricao_servico" id="descicao_servico" cols="30" rows="10">...</textarea>
-        </label>
-        </div>
-        <button type="submit">Vai lá filhão</button>
-    </fieldset>
-</form>
+    <main>
+        <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="/contato.html">Contato</a>
+            <a href="/portifolio.html">Portifolio</a>
+            <a href="/galeria.html">Galeria</a>
+        </nav>
+        <form action="/contato" method="post">
+            <fieldset>
+                <legend>Fala comigo</legend>
+                <label for="nome_do_cliente">
+                    Nome do Cliente:<br>
+                    <input class="texto" type="text" name="nome_do_cliente" id="nome_do_cliente" placeholder="Escreve seu nome aqui">
+                </label><br>
+                <label for="modelo_do_carro">
+                    Modelo do carro:<br>
+                    <input class="texto" type="text" name="modelo_do_carro" id="modelo_do_carro" placeholder="Fala o Modelo do Carro">
+                </label><br>
+                <section class="finalidade"> 
+                    <p>Como voce usa o Possante:</p>
+                    <div>
+                        <label for="dia_a_dia">
+                            <input type="checkbox" name="tipo_de_uso" id="dia_a_dia">
+                            Dia a Dia
+                        </label>
+                        <label for="lazer">
+                            <input type="checkbox" name="tipo_de_uso" id="lazer">
+                            Passeio
+                        </label>
+                        <label for="eventos">
+                            <input type="checkbox" name="tipo_de_uso" id="eventos">
+                            Eventos
+                        </label>
+                    </div>
+                </section>
+                
+                <div class="solicitação">
+                    <label for="descicao_servico">Conte para mim como podemos ajudar: <br>
+                        <textarea name="descricao_servico" id="descicao_servico" cols="30" rows="10">...</textarea>
+                    </label>
+                </div>
+                <button type="submit">Vai lá filhão!</button>
+            </fieldset>
+        </form>
+    </main>
 </body>
+
 </html>

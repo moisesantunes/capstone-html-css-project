@@ -7,7 +7,13 @@ body a,h1,h2,h3,h4,h5,h6{
     font-family: 'Racing Sans One', sans-serif;
     color: rgb(6, 61, 4);
 }
-
+body p, form{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(6, 61, 4);
+}
+/*
+Inicio
+*/
 main{
     width: 100%;
    max-width: 960px;
@@ -17,25 +23,147 @@ main nav{
     text-align: center;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 main nav a{
     border: 2px solid rgb(6, 61, 4);
     color: rgb(6, 61, 4);
-    width: 25%;
-    margin: 0 .5vw;
-    padding: .5vh;
+    width: 23%;
+    padding: .2em;
     text-decoration: none;
-    font-size: larger;
+    font-size: 1em;
+    letter-spacing: 1px;
 }
 main header{
     text-align: center;
     padding: 2vh;
-    border: 1px solid green;
     margin-top: .5vh;
 }
 main header h1{
     font-weight: 100;
     letter-spacing: 5px;
+    font-size: 3em;
     
+}
+main header p{
+    font-size: 1.2em;
+}
+main .banner{
+    width: 100%;
+}
+main .banner img{
+    width: 100%;
+}
+.intro{
+    width: 100%;
+    padding:.5em ;
+}
+.intro h2{
+    letter-spacing: .08em;
+    font-size: 1.75em;
+}
+
+/*
+Contato
+*/
+main form fieldset{
+    width: 80%;
+    margin: 3vh auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(6, 61, 4);
+    padding: 2%;
+}
+main form fieldset legend{
+  text-align: center;
+  margin-right: 10%;
+  color: rgb(6, 61, 4);
+  font-family: 'Racing Sans One', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  padding: .25em;
+
+}
+form .texto{
+    width: 100%;
+    font-size: 1.25em;
+    padding: .25em;
+}
+form .finalidade{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+form .finalidade p{
+    font-size: 1em;
+    margin-bottom: .25em;
+}
+form .finalidade div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+form .finalidade div label{
+    width: 30%;
+}
+form .solicitação{
+    width: 100%;
+    display: flex;
+    margin-top: 1vh;
+}
+form .solicitação label{
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+}
+form .solicitação label textarea{
+    width: 100%;
+    margin-top: .5em;
+}
+form button{
+    background-color: rgb(6, 61, 4);
+    color: white;
+    padding: .25em;
+    font-size: 1.1em;
+    font-family: 'Racing Sans One', sans-serif;
+    letter-spacing: 2px;
+}
+
+/*
+portifolio
+*/
+main .lista{
+    padding: 2%;
+    width: 85%;
+    margin: auto;
+    color: rgb(6, 61, 4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main .lista p{
+    font-family: 'Racing Sans One', sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+/*
+Galeria
+*/
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-flow:  row wrap;
+    justify-content: space-between;
+
+}
+.galeria figure{
+width: 30%;
+margin-bottom: .5em;
+}
+.galeria figure a img{
+    width: 100%;
+}
+.galeria figcaption{
+    color: rgb(6, 61, 4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
